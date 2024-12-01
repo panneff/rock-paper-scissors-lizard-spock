@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors-Lizard-Spock</title>
+    <link rel="stylesheet" href="stylish.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Rock Paper Scissors Lizard Spock</h1>
+
+        <div class="player-choice">
+            <br></br>
+            <h2>Your turn</h2>
+            <h2>Make your choice!</h2>
+            <button class="choice" id="rock">Rock</button>
+            <button class="choice" id="paper">Paper</button>
+            <button class="choice" id="scissors">Scissors</button>
+            <button class="choice" id="lizard">Lizard</button>
+            <button class="choice" id="spock">Spock</button>
+            <br></br>
+            <button class="choice" id="confirm-choice">Confirm</button> <!-- i'm lazy, reduces needed code. -->
+         </div>
+
+        <div class="result" style="display:none;">
+            <h2>Result: <span id="result"></span></h2>
+            <p>Player: <span id="player-choice"></span></p>
+            <p>PC: <span id="pc-choice"></span></p>
+        </div>
+
+        <div class="score">
+            <p>Score: <span id="player-score">0</span></p>
+        </div>
+    </div>
+
+    <div class="rules-container">
+        <h2>How does it work?</h2>
+        <p>
+            This game is a modified version of Rock Paper Scissors, originally imagined by the writers of Big Bang Theory.
+        <ul>
+            <u>The game is easy, here are the rules.</u>
+            <br></br>
+            <br></br>
+            <li>Rock crushes Scissors and Lizard.</li>
+            <li>Paper covers Rock and disproves Spock.</li>
+            <li>The Lizard eats the Paper and poisons Spock</li>
+            <li>Spock smashes Scissors and vaporises Rock.</li>
+        </ul>    
+    </div>
+
+    <script src="game.js"></script>
+</body>
